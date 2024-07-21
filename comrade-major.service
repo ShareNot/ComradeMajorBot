@@ -1,0 +1,18 @@
+[Unit]
+Description=Telegram bot ComradeMajor
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=cmajor
+Group=cmajor
+WorkingDirectory=/home/cmajor/ComradeMajor
+ExecStart=/home/cmajor/ComradeMajor/cmajorvenv/bin/python3 /home/cmajor/ComradeMajor/app.py
+RestartSec=30
+Restart=always
+KillMode=control-group
+EnvironmentFile=/home/cmajor/ComradeMajor/.env
+
+[Install]
+WantedBy=multi-user.target
