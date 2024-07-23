@@ -18,7 +18,7 @@ source /path/to/new/venv/bin/activate
 pip3 install -r requirements.txt
 ```
 ## Файлы конфигурации
-Создать файл .venv, в котором указать токен бота. Пример файла:
+Создать файл .env, в котором указать токен бота. Пример файла:
 ```
 CMAJOR_TOKEN=7777777:AAaaaAAAAAAAaaaaaaaAAAAAAAaaaFI
 ```
